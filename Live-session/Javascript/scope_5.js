@@ -16,7 +16,7 @@
 //interpreted vs compiled
 //doubt
 // console.log("hi");
-// console.log…(“hello");
+// console.log…(“hello");//syntax error while parsing
 // why this doesn’t print anything?
 
 //JS is not purely interpreted
@@ -25,15 +25,15 @@
 //   console.log("Hi");
 // }
 // console.log("Hello");
-// console.log...("Hi");//error
+// console.log...("Hi");//error,syntax error while parsing
 
 //JS is not also copletely compiled
 // console.log("hi");// it will print hi
-// console.lo("hello");
+// console.lo("hello");//typeerror cause console.lo fn is not defined
 
 //doubt
 // console.log("hi");
-// console.log…(“hello");
+// console.log…(“hello");//syntax error while parsing
 //this doesn't print anything why doubt
 
 // console.log(myName);//error
