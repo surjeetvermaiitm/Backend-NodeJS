@@ -147,7 +147,7 @@
 // var teacher = "Sanket";
 // function fun() {
 //   var teacher = "Pulkit";
-//   content = "JS"; //during executionautoglobal
+//   content = "JS"; //during execution autoglobal (it become autoglobal during exexution)
 //   console.log(teacher);
 // }
 // function gun() {
@@ -184,3 +184,18 @@
 
 // myname;//errorors
 // console.log(myname);
+
+// console.log(1 > 2 > 3); //false
+// console.log(1 < 2 < 3); //true
+// console.log(3 > 2 > 1); //false
+
+let obj = {
+  toString() {
+    return "hello";
+  },
+};
+console.log("18" + obj); //18[object Object]
+console.log(18 + obj); //18[object Object]
+console.log("18" + 5); //185
+console.log(18 + "5"); //185
+console.log("18" - 5); //13
