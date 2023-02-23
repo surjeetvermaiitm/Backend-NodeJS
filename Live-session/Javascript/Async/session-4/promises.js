@@ -3,10 +3,10 @@ function getRandomInt(max) {
 }
 // console.log(getRandomInt(4));
 
-//promise synchronous in nature
+// promise synchronous in nature
 // function createPromise() {
 //   return new Promise(function exec(resolve, reject) {
-//     for (let i = 0; i < 100000; i++) {
+//     for (let i = 0; i < 100000000; i++) {
 //       let num = getRandomInt(10);
 //       if (num % 2 == 0) {
 //         //if random number is even then we fullfill
@@ -20,6 +20,7 @@ function getRandomInt(max) {
 // }
 // let x = createPromise();
 // console.log(x);
+// console.log("hi");
 
 //with async timeout
 // function createPromiseWithTimeOut() {
@@ -64,30 +65,30 @@ function getRandomInt(max) {
 // console.log(y);
 // console.log("hi");
 
-function createPromiseWithTimeOut() {
-  return new Promise(function exec(resolve, reject) {
-    setTimeout(function () {
-      let num = getRandomInt(10);
-      if (num % 2 == 0) {
-        //if random number is even then we fullfill
-        console.log("fulfilling");
-        resolve(num);
-        console.log("completed resolving");
-        resolve(10);
-        console.log("resolving again");
-        return num;
-      } else {
-        //if num is odd we reject
-        console.log("rejecting");
-        reject(num);
-        console.log("completed rejected");
-        reject(11);
-        console.log("reject again");
-        return num;
-      }
-    }, 10000);
-  });
-}
-let y = createPromiseWithTimeOut();
-console.log(y);
-console.log("hi");
+// function createPromiseWithTimeOut() {
+//   return new Promise(function exec(resolve, reject) {
+//     setTimeout(function () {
+//       let num = getRandomInt(10);
+//       if (num % 2 == 0) {
+//         //if random number is even then we fullfill
+//         console.log("fulfilling");
+//         resolve(num);
+//         console.log("completed resolving");
+//         resolve(10);
+//         console.log("resolving again");
+//         return num;
+//       } else {
+//         //if num is odd we reject
+//         console.log("rejecting");
+//         reject(num);
+//         console.log("completed rejected");
+//         reject(11);
+//         console.log("reject again");
+//         return num;
+//       }
+//     }, 10000);
+//   });
+// }
+// let y = createPromiseWithTimeOut();
+// console.log(y);
+// console.log("hi");
